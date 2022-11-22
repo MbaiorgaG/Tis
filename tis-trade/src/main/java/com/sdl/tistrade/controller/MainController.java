@@ -17,7 +17,7 @@ public class MainController {
   }
 @RequestMapping(value = {"/", "/home"})
   public String getHomePage(){
-    logger.info("application home");
+    logger.info("application home now");
     return "ret-login";
   }
 
