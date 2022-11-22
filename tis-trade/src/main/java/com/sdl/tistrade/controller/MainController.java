@@ -1,6 +1,7 @@
 package com.sdl.tistrade.controller;
 
 import java.util.Locale;
+import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -16,7 +17,8 @@ public class MainController {
 
   }
 @RequestMapping(value = {"/", "/home"})
-  public String getHomePage(){
+  public String getHomePage(HttpSession session){
+    session.invalidate();
     logger.info("application home now");
     return "ret-login";
   }
