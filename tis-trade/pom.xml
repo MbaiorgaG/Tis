@@ -20,6 +20,7 @@
   <properties>
     <java.version>17</java.version>
     <thymeleaf.version>3.1.0.RELEASE</thymeleaf.version>
+    <thymeleaf-starter.version>2.7.5</thymeleaf-starter.version>
     <thymeleaf-extras-springsecurity4.version>3.0.4.RELEASE</thymeleaf-extras-springsecurity4.version>
     <thymeleaf-layout-dialect.version>3.1.0</thymeleaf-layout-dialect.version>
     <thymeleaf-extras-data-attribute.version>2.0.1</thymeleaf-extras-data-attribute.version>
@@ -42,6 +43,12 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+      <version>${thymeleaf-starter.version}</version>
     </dependency>
 
     <dependency>
