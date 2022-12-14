@@ -1,0 +1,18 @@
+.has-success .form-control {
+    border-color: #4cae4c;
+    box-shadow: none !important;
+}
+
+.has-warning .form-control {
+    border-color: #f0ad4e;
+    box-shadow: none !important;
+}
+
+.has-error .form-control {
+    border-color: #f05050;
+    box-shadow: none !important;
+}
+
+.errors{
+    color: red !important;
+}

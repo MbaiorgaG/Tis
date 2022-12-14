@@ -1,0 +1,121 @@
+.brand-img
+{
+    position:absolute;
+    width: 100%;
+    opacity: 0.95;
+}
+.login{
+    position:absolute;
+
+}
+.label{
+    color:#002e5a !important;
+    font-weight: bold;
+    font-family: Calibri !important;
+}
+
+.input:focus {
+    border-color:#002e5a;
+}
+
+.auth-form{
+    position: relative;
+    margin-bottom: 90px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.forms{
+    position: relative;
+    padding: 100px;
+    background-color:white;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius:8px;
+}
+
+
+.display-4 {
+    font-size: 1.7rem;
+    color:#002e5a;
+    font-weight: bold;
+    /*font-family: Calibri !important;*/
+}
+
+.btn-primary:hover{
+    height:60px;
+    background-color:#002e5a !important;
+    border-color:#002e5a !important;
+    width:85% !important;
+}
+
+.btn-primary{
+    height:60px;
+    background-color:#002e5a !important;
+    border-color:#002e5a !important;
+    font-weight: bold;
+    font-family: calibri !important;
+    width:85% !important;
+
+
+}
+
+input[type=text] {
+    /*border-color:#002e5a;*/
+    border-width:thin;
+    border-color:lightgray;
+    width: 85%;
+}
+
+.input-group{
+    width: 85%;
+
+
+}
+input[type=text]:focus{
+    border-color:#002e5a;
+
+}
+.mb-30
+{
+    font-family:Calibri !important;
+    color: #505050;
+    letter-spacing: 0.03em;
+}
+
+input[type=password] {
+    border-color:#002e5a;
+}
+
+input[type=password]:focus{
+    border-color:#002e5a;
+
+}
+
+.login-error{
+    background-color:#fff1f1;
+    color:#8b0c12;
+    width: 85%;
+    margin-top: 10px;
+}
+
+
+
+.form-control{
+    height: 55px;
+}
+.forgot{
+    float: right;
+    margin-bottom: 23px;
+    color:#b50156;
+    font-weight: bold;
+    font-family: Calibri !important;
+    letter-spacing: 0.03em;
+    margin-right: 67px;
+}
+
+
+
+body{
+    background-color: white;
+}

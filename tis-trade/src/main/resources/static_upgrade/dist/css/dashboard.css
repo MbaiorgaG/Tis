@@ -1,0 +1,15 @@
+
+
+
+.dataTables_wrapper .dataTables_length {
+    display:none;
+}
+
+
+
+table.dataTable thead td, table.dataTable thead th{
+    padding: 10px;
+    background-color: white !important;
+    color: #002e5a !important;
+    font-weight: bold;
+}

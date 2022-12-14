@@ -1,0 +1,54 @@
+h2{
+    font-family: Calibri !important;
+}
+
+p{
+    font-family: Calibri !important;
+    color:#002e5a !important;
+
+
+}
+label
+{
+    font-family: Calibri !important;
+    color:  #002e5a !important;
+
+}
+
+.btn-primary
+{
+    border-color: #002e5a !important;
+    background-color:#002e5a !important;
+}
+
+.font-light
+{
+    font-family: Calibri !important;
+    color:#002e5a !important;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+
+.alert-success{
+    background-color: #002e5a !important;
+    border-color:#002e5a  !important;
+}
+
+.alert-danger, .alert-error{
+   background-color:#b50156 !important
+}
+
+.form-horizontal .control-label
+{
+    font-family: Calibri !important;
+    color:#002e5a !important;
+}
+
+.btn-danger, .btn-red{
+    background-color:#d2d7db !important;
+    border-color:#d2d7db !important;
+}
+
+
+
