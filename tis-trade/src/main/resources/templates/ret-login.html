@@ -1,10 +1,138 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Trade Portal</title>
-</head>
-<body>
 
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link th:href="@{/dist/css/style.css}" rel="stylesheet" type="text/css">
+  <link href="../static/dist/css/login.css" th:href="@{/dist/css/login.css}" rel="stylesheet" type="text/css">
+
+  <style>
+
+    body{
+      background-size: cover;
+      position: fixed;
+
+    }
+
+    .forms{
+      padding: 70px 90px 40px;
+      width: 550px;
+      background-repeat: no-repeat;
+      height: 600px;
+      box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+</head>
+
+<body  class="background"  th:style="'background-image:url(\''+ @{~/customer/images/TIS_Portal.jpg}+ '\');'">
+
+<div class="preloader-it">
+  <div class="loader-pendulums"></div>
+</div>
+
+<div class="col-xl-7 pa-0 login">
+
+  <div class="auth-form w-xxl-55 w-xl-75 w-sm-90 w-xs-100">
+
+    <form th:action="@{/retail/login}" class="forms" method="post">
+
+      <h1 class="display-4 mb-10"><span style="font-family: Calibri !important;font-size:19px" >Welcome to Trade Information System Portal</span></h1>
+      <div class="mb-30" style="margin-bottom: 8px !important;">Kindly fill in the form below  <span>to log in</span></div>
+      <hr  style="width: 190px; background-color: rgba(0, 42, 94, .1); margin: 0 !important; padding: 0 !important; border: 1.2px solid rgba(0, 42, 94, .1);" >
+
+      <th:block th:if="${failure != null}">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <h5 class="alert-heading mb-5" th:text="${failure}">Oh snap!</h5>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </th:block>
+
+      <th:block th:if="${message != null}">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <h5 class="alert-heading mb-5" th:text="${message}">Oh snap!</h5>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </th:block>
+
+      <th:block th:if="${param.message != null}">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <h5 class="alert-heading mb-5" th:text="${param.message[0]}">Oh snap!</h5>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </th:block>
+
+      <th:block th:if="${param.expired != null}">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <h5 class="alert-heading mb-5" th:text="${session.expired}">Oh snap!</h5>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </th:block>
+
+      <th:block th:if="${param.error != null}">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <h5 class="alert-heading mb-5" th:text="${session[SPRING_SECURITY_LAST_EXCEPTION]}">Oh snap!</h5>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </th:block>
+
+      <div class="form-group" style="margin-top: 55px">
+        <label style="color:#002e5a;font-weight: bold">Username</label>
+        <input class="form-control" placeholder="Username" id="username" name="username"  type="text">
+      </div>
+
+
+      <div class="form-group">
+        <label style="color:#002e5a;font-weight: bold">Password</label>
+        <div class="input-group">
+          <input type="password" placeholder="Password" autocomplete="off" name="password" id="password" class="form-control">
+          <div class="input-group-append">
+            <span class="input-group-text"><span class="feather-icon"><i data-feather="eye-off"></i></span></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="forgot">
+        <a href="/ret/forgetpassword" style="color: #b50156 !important;"> Forgot your details?</a>
+      </div>
+
+      <button class="btn btn-primary btn-block" type="submit">Login</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<script th:src="@{~/vendors/jquery/dist/jquery.min.js}"></script>
+
+<script th:src="@{~/vendors/popper.js/dist/umd/popper.min.js}"></script>
+<script th:src="@{~/vendors/bootstrap/dist/js/bootstrap.min.js}"></script>
+
+<script th:src="@{~/dist/js/jquery.slimscroll.js}"></script>
+
+<script th:src="@{~/dist/js/dropdown-bootstrap-extended.js}"></script>
+
+<script th:src="@{~/vendors/owl.carousel/dist/owl.carousel.min.js}"></script>
+
+<script th:src="@{~/dist/js/feather.min.js}"></script>
+
+<script th:src="@{~/dist/js/init.js}"></script>
+<script th:src="@{~/dist/js/login-data.js}"></script>
 </body>
 </html>

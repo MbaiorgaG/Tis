@@ -1,0 +1,118 @@
+@font-face {
+			  font-family: 'Calibri';
+			  src: url('fonts/Calibri.woff') format('woff'),
+			       url('fonts/Calibri.ttf') format('truetype');
+			  font-weight: normal;
+			  font-style: normal;
+			}
+			@font-face {
+			  font-family: 'Calibri-Bold';
+			  src: url('fonts/Calibri-Bold.woff') format('woff'),
+			       url('fonts/Calibri-Bold.ttf') format('truetype');
+			  font-weight: normal;
+			  font-style: normal;
+			}
+
+			body{
+				font-family: Calibri;
+			    color: #002e5a;
+			    position: relative;
+			}
+			label{margin-bottom: 0px;
+					font-size: 13px;}
+			.parentDiv{max-width: 300px;
+						-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.31);
+						-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.31);
+						box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.31);
+					  
+					    position: absolute;
+					    top: 160px;
+					    left: 145px;
+						}
+			.signIn{
+					font-size: 13px;
+					background-color: white;
+					color: #002e5a;
+					padding: 7px 20px 7px 20px;
+				}
+
+
+
+
+.signIn2{
+	font-size: 13px;
+	background-color: white;
+	color: #002e5a;
+	padding: 17px 30px 17px 31px;
+}
+
+			.instruction{ font-weight: bold;
+						font-family:Calibri-Bold;
+    					font-size: 18px;
+    					margin-top: -20px;
+    					margin-bottom: -20px;
+							/* IE10+ */ 
+							background-image: -ms-radial-gradient(center, ellipse farthest-corner, #D2D7DB 0%, #b5b5b6 100%);
+
+							/* Mozilla Firefox */ 
+							background-image: -moz-radial-gradient(center, ellipse farthest-corner, #D2D7DB 0%, #b5b5b6 100%);
+
+							/* Opera */ 
+							background-image: -o-radial-gradient(center, ellipse farthest-corner, #D2D7DB 0%, #b5b5b6 100%);
+
+							/* Webkit (Safari/Chrome 10) */ 
+							background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #D2D7DB), color-stop(100, #b5b5b6));
+
+							/* Webkit (Chrome 11+) */ 
+							background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #D2D7DB 0%, #b5b5b6 100%);
+
+							/* W3C Markup */ 
+							background-image: radial-gradient(ellipse farthest-corner at center, #D2D7DB 0%, #b5b5b6 100%);}
+			.btn-fbn{color: white !important;
+						background-color: #002e5a !important;}
+			.btn-fbn:hover{color: #f1f1f1}
+			.instruction p{margin: 20px;
+						}
+			.shortText{
+				padding: 10px 0px;
+			}
+			.form-group{margin-bottom: 5px;}
+			.backgroundImage{    width: 100%;
+    				height: -webkit-fill-available;
+    				position: absolute;}
+    		a{color: #b50156;
+    			text-decoration: underline;
+    			font-weight: bold;}
+    		a:hover{color: #51616c;
+    			 }
+    		.signLink{margin-top: 10px;
+						margin-bottom: 30px;}
+    		.mobileVisible {position: absolute;
+    						top: 10px;
+    						left: 10px;}
+    		@media (max-width: 860px){
+    			
+    			button{margin-top: 30px; width: 100%;}
+
+
+			.parentDiv
+			{
+    					-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.31);
+						-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.31);
+						box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.31);
+    					margin: 0 auto;
+    					position: absolute;
+					    top: 150px;
+					    left: 0;
+					    right: 0; 
+
+
+						bottom: 0;}
+    		}
+    		@media (max-width: 630px){
+
+    			.backgroundImage{display: none;}
+    		}
+    		@media (min-width: 631px){
+    			.mobileVisible{ display: none; }
+    		}
